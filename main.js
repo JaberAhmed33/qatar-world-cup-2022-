@@ -7,7 +7,7 @@ const backupUrlMatches = "./matches.json"
   function getStanding(){
     const url = `${baseUrl}/competitions/2000/standings`
 
-    axios.get(url, {
+    axios.get(backupUrlStandings, {
         headers: {
             "X-Auth-Token": token
         }
@@ -82,7 +82,7 @@ const backupUrlMatches = "./matches.json"
 function getMatches(){
     const url = `${baseUrl}/competitions/2000/matches`
 
-    axios.get(url, {
+    axios.get(backupUrlMatches, {
         headers: {
             "X-Auth-Token": token
         }
