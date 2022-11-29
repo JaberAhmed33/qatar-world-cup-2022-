@@ -1,0 +1,209 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Almarai', sans-serif !important;
+}
+
+/* start variables */
+:root{
+    --main-color: #811538;
+    --secondary-color: #5b0d25;
+}
+
+.bg-main {
+    background-color:var(--main-color) !important;
+    color: white !important;
+}
+
+.bg-second {
+    background-color: var(--secondary-color);
+    color: white ;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.border-right {
+    border-right: solid 5px var(--secondary-color);
+}
+
+.border-left {
+    border-left: solid 5px var(--secondary-color);
+}
+
+.margin-auto-0{
+    margin: auto 0 !important;
+}
+
+/* end variables */
+
+
+
+header {
+    height: 20rem;
+    background-image: url(./imgs/pattern.png);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    border-bottom: solid 20px #5b0d25;
+}
+
+#logo {
+    position: absolute;
+    z-index: 777;
+    left: 100px;
+    top: 60px;
+}
+
+#logo img{
+    height: 300px;
+    -webkit-filter: drop-shadow(5px 5px 30px #222);
+    filter: drop-shadow(5px 5px 30px #222);
+}
+
+.title-header {
+    direction: rtl;
+    margin-right: 100px;
+    padding: 48px;
+    color: white;
+}
+
+.title-header #cup{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.title-header #world{
+    font-size: 90px;
+    font-weight: 800;
+}
+
+.qatar-word {
+    margin-top: 30px;
+}
+
+.qatar-word img {
+    width: 400px;
+}
+
+.main-container {
+    margin-top: 50px;
+}
+
+.standing-row {
+    direction: rtl;
+    margin: 0 !important;
+}
+
+.card {
+    border: none !important;
+}
+
+.flag img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-name {
+    margin: auto 4px;
+}
+
+.win-con{
+    color: rgb(6, 168, 6) !important;
+    position: relative;
+}
+
+.win-con h3{
+    margin: 0;
+}
+
+.win{
+   position: absolute;
+   
+}
+
+.add-info-col{
+    display: none ;
+}
+
+@media screen and (max-width: 767px){
+
+    header {
+        height: 15rem;
+        background-position: center ;
+    }
+    
+    #logo{
+        left: 7%;
+        top: 9%;
+    }
+
+    #logo img{
+        height: 177px;
+    }
+
+    .title-header {
+        margin-right: 0;
+        padding: 30px;
+    }
+
+    .title-header #cup{
+        font-size: 45px;
+        font-weight: 800;
+    }
+    
+    .title-header #world{
+        font-size: 60px;
+        font-weight: 800;
+    }
+
+    .qatar-word {
+        margin-top: 35px;
+    }
+
+    .qatar-word img {
+        width: 200px;
+    }
+
+    .display-none{
+        display: none !important;
+    }
+
+    .list-group-item{
+        display: flex !important;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .width-50{
+        width: 50%;
+    }
+
+    .add-info-col{
+        display: flex;
+        flex-direction: column;
+        padding-right: 30%;
+        border-right: solid 1px #333;
+    }
+
+    .add-info-col .team{
+        padding-bottom: 3px;
+    }
+   
+    .add-info-col div{
+        margin-bottom: 3px;
+    }
+
+    p{
+        margin: 0 !important;
+    }
+
+  
+}
